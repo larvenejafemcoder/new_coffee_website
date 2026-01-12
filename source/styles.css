@@ -1,0 +1,107 @@
+body {
+  box-sizing: border-box;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-vietnam {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #2d1810 0%, #4a2c1a 50%, #1a0f0a 100%);
+}
+
+.coffee-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.leaf-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234a7c59' fill-opacity='0.05'%3E%3Cpath d='M40 40c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20c0 11.046 8.954 20 20 20s20-8.954 20-20-8.954-20-20-20c11.046 0 20-8.954 20-20s-8.954-20-20-20-20 8.954-20 20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.product-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(45, 24, 16, 0.15);
+}
+
+.category-circle {
+  transition: all 0.3s ease;
+}
+
+.category-circle:hover {
+  transform: scale(1.1);
+}
+
+.category-circle:hover .count-badge {
+  animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+.instagram-item {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.instagram-item:hover {
+  transform: scale(1.02);
+}
+
+.instagram-item:hover .instagram-overlay {
+  opacity: 1;
+}
+
+.instagram-overlay {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(74, 44, 26, 0.3);
+}
+
+.quality-card {
+  transition: all 0.4s ease;
+}
+
+.quality-card:hover {
+  transform: scale(1.02);
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #8b5a2b;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
