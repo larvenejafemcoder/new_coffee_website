@@ -139,12 +139,27 @@
  <body class="h-full font-sans-body bg-cream text-espresso overflow-auto">
   <div class="w-full min-h-full relative"><!-- Grain Texture Overlay -->
    <div class="grain-overlay fixed inset-0 z-50"></div><!-- Navigation -->
-   <nav class="fixed top-0 left-0 right-0 z-40 bg-cream bg-opacity-95 backdrop-blur-sm">
-    <div class="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center"><a href="./index.html" id="nav-site-name" class="font-serif-display text-lg tracking-wide text-espresso animate-slide-left">VietCoffee</a>
-     <div class="flex gap-8 text-sm tracking-widest uppercase text-warm-gray"><a href="#about" id="nav-about-link" class="hover:text-espresso transition-colors duration-300 animate-fade-in animate-delay-1">About</a> <a href="#journal" id="nav-journal-link" class="hover:text-espresso transition-colors duration-300 animate-fade-in animate-delay-2">Journal</a> <a href="#visit" id="nav-visit-link" class="hover:text-espresso transition-colors duration-300 animate-fade-in animate-delay-3">Visit</a>
-     </div>
-    </div>
-   </nav><!-- Hero Section -->
+
+      <nav class="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-sm">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="./index.html" class="flex items-center gap-2">
+                <svg class="w-6 h-6 text-brown-700" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M2,21H20V19H2M20,8H18V5H20M20,3H4V13A4,4 0 0,0 8,17H14A4,4 0 0,0 18,13V10H20A2,2 0 0,0 22,8V5C22,3.89 21.1,3 20,3Z" />
+                </svg>
+                <span class="font-medium text-gray-800">VietCoffee</span>
+            </a>
+            
+            <!-- Navigation Links -->
+            <div class="flex gap-5 text-sm text-gray-600">
+                <a href="#about" class="hover:text-gray-900">About</a>
+                <a href="#journal" class="hover:text-gray-900">Journal</a>
+                <a href="#visit" class="hover:text-gray-900">Visit</a>
+            </div>
+        </div>
+      </nav>
+   
+   <!-- Hero Section -->
    <section id="about" class="hero-gradient min-h-screen flex items-center relative overflow-hidden">
     <div class="absolute inset-0 opacity-20">
      <svg class="w-full h-full" viewbox="0 0 100 100" preserveaspectratio="none"><defs>
